@@ -15,6 +15,7 @@ android {
         versionName = "reader-1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -52,4 +53,5 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
     implementation ("com.jakewharton.timber:timber:5.0.1")
+    implementation("com.android.support:multidex:1.0.3")
 }
